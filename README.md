@@ -2,6 +2,8 @@
 >  Python Command-Line Interface Package to copy Dynamodb data in parallel batch processing + query natural & Global Secondary Indexes (GSIs).
 #### Author: Simon Ryu
 
+This packaging distribution is published on PyPI, found [here](https://pypi.org/project/dynamo-cmdline/).
+
 ## What is DynamoDB?
 Dynamo is a NoSQL database. A table in Dynamo is defined by its **Partition Key**, which
 uniquely identifies a list of records.

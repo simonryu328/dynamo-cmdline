@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dynamo/__init__.py
+dynamo/__main__.py
+dynamo/cli.py
+dynamo/dynamodb_table.py
+dynamo_cmdline.egg-info/PKG-INFO
+dynamo_cmdline.egg-info/SOURCES.txt
+dynamo_cmdline.egg-info/dependency_links.txt
+dynamo_cmdline.egg-info/entry_points.txt
+dynamo_cmdline.egg-info/top_level.txt
