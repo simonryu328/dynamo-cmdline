@@ -1,4 +1,4 @@
-# Copy DynamoDB data CLI
+# Dynamo CLI
 >  Python Command-line interface to copy Dynamodb data in parallel batch processing + query natural & Global Secondary Indexes (GSIs).
 #### Author: Simon Ryu
 
@@ -20,7 +20,6 @@ Command line interface to copy, query and restore DynamoDB tables and items
 positional arguments:
   {copy,restore,query}
     copy                Copy table or items from source to target envrionment
-    restore             Restore table from on-demand backup, or items from s3 export. To restore a table, a back up table named {table_name}-backup must exist beforehand.
     query               Query items in specified environment's table
 
 optional arguments:
