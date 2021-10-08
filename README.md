@@ -10,7 +10,6 @@ primary key referred to as a *composite primary key*. This gives an additional f
 Each partition (Partition Key) can be thought of as a filing cabinet drawer, containing a bunch of related records
 which may or may not be sorted (Sort Key) depending on your need. Accounting for this optionality, the DynamodbTable class in module `dynamodb_table.py`
 can represent tables with either simple (Partition Key) or composite (Partition Key + Sort Key) primary key.
-\
 
 
 ## Dynamo vs Relational database
@@ -21,12 +20,10 @@ filtered by the sort key. Although filtering by other fields (attributes) is pos
 it is highly discouraged as AWS charges the user based on how much data is read, and non-key filters occur *after*
 the reads happen. Querying, and especially copying large amount of data across different AWS environments must be done with extreme care
 (double the query operations!), hence this CLI package was distributed.
-\
 
 
 ## GSI
 Since querying is limited to the table's primary key, how can we address many different access patterns? The answer is global secondary indexes, or GSIs. A GSI allows you to essentially re-declare your table with a new key schema. When an item is written into the table, the index will update automatically, so managing dual-writing is not a concern. Most importantly, the GSI can be queried directly just like the natural table, just as fast.
-\
 
 
 ### Libraries Used
