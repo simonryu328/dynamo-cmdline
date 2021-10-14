@@ -18,7 +18,7 @@ The lists are ordered by the **Sort Key**, an optional key that along with Parti
 primary key referred to as a *composite primary key*. This gives an additional flexibility when querying data.
 Each partition (Partition Key) can be thought of as a filing cabinet drawer, containing a bunch of related records
 which may or may not be sorted (Sort Key) depending on your need. Accounting for this optionality, the DynamodbTable class in module `dynamodb_table.py`
-can represent tables with either simple (Partition Key) or composite (Partition Key + Sort Key) primary key.
+can represent tables with either simple (Partition Key) or composite (Partition Key + Sort Key) primary key. This article explains much more about ["the what, why and how of DynamoDB"](https://adamrackis.dev/dynamo-introduction/) in greater detail.
 
 ## Dynamo vs Relational database
 Dynamo differs from traditional, relational databases in that tables cannot be queried by random fields.
